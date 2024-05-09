@@ -22,8 +22,6 @@ while True:
     code = os.system('git push')
 
     if code != 0:
+        print('git push return non-zero exit code!')
         break
-
-    print('git push return non-zero exit code!')
     print(f'Repo at {(chunks * buffer_size)/1024**3:.02f}GB')
-    break
